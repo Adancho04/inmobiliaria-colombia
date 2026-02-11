@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Pro | Colombia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 bg-white shadow-md">
+        <div class="text-2xl font-bold text-blue-900">
+            COL<span class="text-yellow-500">HOGAR</span>
+        </div>
+        <div class="hidden md:flex gap-8 font-medium text-gray-700">
+            <a class="hover:text-blue-600 cursor-pointer">Comprar</a>
+            <a class="hover:text-blue-600 cursor-pointer">Arrendar</a>
+            <a class="hover:text-blue-600 cursor-pointer">Vender</a>
+        </div>
+        <button class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition">
+            Publicar Gratis
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-[600px] flex flex-col justify-center items-center text-white px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 text-center">
+            Encuentra tu hogar ideal en Colombia
+        </h1>
+        <div class="bg-white p-6 rounded-lg shadow-2xl w-full max-w-4xl flex flex-wrap gap-4 text-gray-800">
+            <input type="text" placeholder="Ciudad o Barrio" 
+                   class="flex-1 p-3 border rounded-md outline-none focus:ring-2 focus:ring-blue-500">
+            <select class="p-3 border rounded-md outline-none">
+                <option>Tipo de inmueble</option>
+                <option>Apartamento</option>
+                <option>Casa</option>
+            </select>
+            <button class="bg-yellow-500 text-blue-900 font-bold px-8 py-3 rounded-md hover:bg-yellow-400 transition-all">
+                <i class="fa-solid fa-magnifying-glass mr-2"></i>
+                Buscar
+            </button>
+        </div>
+    </section>
+</body>
+</html>
